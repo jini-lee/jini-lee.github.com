@@ -4,7 +4,6 @@ tagline: 'jini-lee 창작과 코딩'
 description: '개발하며 기록하고 저장하고 싶은 것들 ...'
 baseurl: ""
 url: http://jini-lee.github.io
-logo: '/public/logo.png'
 
 # Site configurations
 gems:
@@ -27,11 +26,8 @@ author:
   name: LEE JINHEE
   description: zaddy.jini
   contact:
-    #linkedin:  
     github:    https://github.com/jini-lee
-    # facebook:  <hide>
-    #twitter:   https://twitter.com/Li_Zhihao
-    #weibo:     http://weibo.com/41173780
+    facebook:  https://www.facebook.com/jinhee.lee.351
     email:     mailto:zaddy.jini@gmail.com
 
 # Navigation (2nd level links supported)
