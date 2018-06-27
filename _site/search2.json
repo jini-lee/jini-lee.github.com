@@ -1,0 +1,103 @@
+[
+  
+    {
+      "title"    : "테스트 블로그 쓰기",
+      "category" : "python",
+      "tags"     : "python, 파이썬",
+      "url"      : "/python/2018/06/27/test/",
+      "date"     : "2018-06-27 00:00:00 +0900",
+      "content"   : "<h1 id=\"대제목\">대제목</h1>\n<blockquote>\n  <p><a href=\"jini-lee.github.io\">레퍼런스</a></p>\n</blockquote>\n\n<h2 id=\"소제목\">소제목</h2>\n<p>블로그 쓰기 예제</p>\n\n<ul>\n  <li>테스트입니다</li>\n  <li>테스트입니다2</li>\n  <li>테스트입니다3</li>\n</ul>\n\n<div class=\"highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code>$ shell\n$ python manage.py migrate\n</code></pre></div></div>\n\n<ul>\n  <li>예시</li>\n</ul>\n\n<div class=\"language-python highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"k\">class</span> <span class=\"nc\">A</span><span class=\"p\">()</span>\n    <span class=\"n\">__init__</span><span class=\"p\">(</span><span class=\"o\">**</span><span class=\"n\">kwargs</span><span class=\"p\">):</span>\n        <span class=\"bp\">self</span><span class=\"o\">.</span><span class=\"n\">test</span> <span class=\"o\">=</span> <span class=\"n\">kwargs</span><span class=\"p\">[</span><span class=\"s\">'test'</span><span class=\"p\">]</span>\n</code></pre></div></div>\n\n<h2 id=\"소제목2\">소제목2</h2>\n<p>소제목 디스크립션</p>\n\n<ul>\n  <li>http://127.0.0.1:4000 제킬 띄우기</li>\n  <li>사이트 확인하기</li>\n</ul>\n\n<div class=\"highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code>$ python manage.py migrate\n</code></pre></div></div>\n\n<ul>\n  <li>테스트 입니다</li>\n  <li>테스트 입니다2</li>\n</ul>\n\n<div class=\"language-python highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"k\">def</span> <span class=\"nf\">gen</span><span class=\"p\">():</span>\n    <span class=\"k\">yield</span>\n</code></pre></div></div>\n"
+    } 
+  
+  ,
+  
+   {
+     
+        "title"    : "404: Page not found",
+        "category" : "",
+        "tags"     : "",
+        "url"      : "/404.html",
+        "date"     : "",
+        "content"  : "<div class=\"page\">\n  <h1 class=\"page-title\">404: Page not found</h1>\n  <p class=\"lead\">Sorry, we've misplaced that URL or it's pointing to something that doesn't exist. <a href=\"/\">Head back home</a> to try finding it again.</p>\n</div>\n"
+     
+   } ,
+  
+   {
+     
+        "title"    : "About",
+        "category" : "",
+        "tags"     : "",
+        "url"      : "/about/",
+        "date"     : "",
+        "content"  : "<p class=\"message\">\n  <a href=\"https://www.tayotayo.net\">셔틀타요</a> 개발팀에서 일하고 있는 개발자 겸 코파운더입니다.<br />\n  새로운 기술에 관심이 많고 어려운 문제를 해결하는걸 좋아합니다.<br />\n  21세기 마지막 휴머니스트<br />\n</p>\n"
+     
+   } ,
+  
+   {
+     
+   } ,
+  
+   {
+     
+        "title"    : "Categories",
+        "category" : "",
+        "tags"     : "",
+        "url"      : "/blog/categories/",
+        "date"     : "",
+        "content"  : "<div class=\"tags-expo\">\n  <div class=\"tags-expo-list\">\n    \n    <a href=\"#python\" class=\"post-tag\">python</a>\n    \n  </div>\n  <hr/>\n  <div class=\"tags-expo-section\">\n    \n    <h2 id=\"python\">python</h2>\n    <ul class=\"tags-expo-posts\">\n      \n        <a class=\"post-title\" href=\"/python/2018/06/27/test/\">\n      <li>\n        테스트 블로그 쓰기\n      <small class=\"post-date\">27 Jun 2018</small>\n      </li>\n      </a>\n      \n    </ul>\n    \n  </div>\n</div>\n"
+     
+   } ,
+  
+   {
+     
+        "title"    : "Blog",
+        "category" : "",
+        "tags"     : "",
+        "url"      : "/blog/",
+        "date"     : "",
+        "content"  : "<div class=\"posts\">\n  \n  <div class=\"post\">\n    <h1 class=\"post-title\">\n      <a href=\"/python/2018/06/27/test/\">\n        테스트 블로그 쓰기\n      </a>\n    </h1>\n\n    <span class=\"post-date\">27 Jun 2018</span>\n     | \n    \n    <a href=\"/blog/tags/#python\" class=\"post-tag\">python</a>\n    \n    <a href=\"/blog/tags/#파이썬\" class=\"post-tag\">파이썬</a>\n    \n    \n\n    <article>\n      <h1 id=\"대제목\">대제목</h1>\n<blockquote>\n  <p><a href=\"jini-lee.github.io\">레퍼런스</a></p>\n</blockquote>\n\n<h2 id=\"소제목\">소제목</h2>\n<p>블로그 쓰기 예제</p>\n\n<ul>\n  <li>테스트입니다</li>\n  <li>테스트입니다2</li>\n  <li>테스트입니다3</li>\n</ul>\n\n<div class=\"highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code>$ shell\n$ python manage.py migrate\n</code></pre></div></div>\n\n<ul>\n  <li>예시</li>\n</ul>\n\n<div class=\"language-python highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"k\">class</span> <span class=\"nc\">A</span><span class=\"p\">()</span>\n    <span class=\"n\">__init__</span><span class=\"p\">(</span><span class=\"o\">**</span><span class=\"n\">kwargs</span><span class=\"p\">):</span>\n        <span class=\"bp\">self</span><span class=\"o\">.</span><span class=\"n\">test</span> <span class=\"o\">=</span> <span class=\"n\">kwargs</span><span class=\"p\">[</span><span class=\"s\">'test'</span><span class=\"p\">]</span>\n</code></pre></div></div>\n\n<h2 id=\"소제목2\">소제목2</h2>\n<p>소제목 디스크립션</p>\n\n<ul>\n  <li>http://127.0.0.1:4000 제킬 띄우기</li>\n  <li>사이트 확인하기</li>\n</ul>\n\n<div class=\"highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code>$ python manage.py migrate\n</code></pre></div></div>\n\n<ul>\n  <li>테스트 입니다</li>\n  <li>테스트 입니다2</li>\n</ul>\n\n<div class=\"language-python highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"k\">def</span> <span class=\"nf\">gen</span><span class=\"p\">():</span>\n    <span class=\"k\">yield</span>\n</code></pre></div></div>\n\n    <article>\n    <div class=\"post-more\">\n      \n      <a href=\"/python/2018/06/27/test/#disqus_thread\"> <i class=\"fa fa-comments\" aria-hidden=\"true\"></i>Comment</a>&nbsp;\n      \n      <a href=\"/python/2018/06/27/test/\"><i class=\"fa fa-plus-circle\" aria-hidden=\"true\"></i>Read more</a>\n    </div>\n  </div>\n  \n</div>\n\n<div class=\"pagination\">\n  \n    <span class=\"pagination-item older\">Older</span>\n  \n  \n    <span class=\"pagination-item newer\">Newer</span>\n  \n</div>\n\n"
+     
+   } ,
+  
+   {
+     
+        "title"    : "Home",
+        "category" : "",
+        "tags"     : "",
+        "url"      : "/",
+        "date"     : "",
+        "content"  : "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"utf-8\">\n    <!-- jquery 추가 -->\n    <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js\"></script>\n    <style>\n      .category-title{\n        cursor: pointer;\n      }\n      .category-title:hover > h2{\n        text-decoration: underline;\n      }\n      .tags-expo-posts{\n        display: block;\n      }\n      #shortcut{\n        font-size: 1.1rem;\n        color: rgba(49, 49, 49, 0.82);\n      }\n      #shortcut-img{\n        width : 30px;\n        display : inline;\n        margin-right : 9px;\n        vertical-align : -webkit-baseline-middle;\n      }\n      </style>\n\n  </head>\n  <body>\n    <div class=\"tags-expo\">\n      <div class=\"tags-expo-list\">\n        \n        <a href=\"#python\" class=\"post-tag\">python</a>\n        \n      </div>\n      <hr/>\n\n      <div class=\"tags-expo-section\">\n        <a href=\"/blog/\"><h4 id=\"shortcut\"><img id=\"shortcut-img\" src=\"/public/shortcut.png\">최근 글 바로가기</h4></a>\n        <ul class=\"tags-expo-posts\">\n          \n          <a class=\"post-title\" href=\"/python/2018/06/27/test/\">\n            <li>\n              테스트 블로그 쓰기\n              <small class=\"post-date\">27 Jun 2018</small>\n            </li>\n          </a>\n          \n        </ul>\n\n\n        \n        <a class=\"category-title\"><h2 id=\"python\">python</h2></a>\n        <ul class=\"tags-expo-posts\">\n          \n            <a class=\"post-title\" href=\"/python/2018/06/27/test/\">\n          <li>\n            테스트 블로그 쓰기\n          <small class=\"post-date\">27 Jun 2018</small>\n          </li>\n          </a>\n          \n        </ul>\n        \n      </div>\n    </div>\n\n  <!-- 카테고리 글 숨김, 표시 전환 코드 -->\n  <script type=\"text/javascript\">\n    $(\".category-title\").click(function(){\n      if ($(this).next().css('display') === 'block'){\n        $(this).next().slideUp()\n        $(this).children().css(\"color\", \"#393939\")\n      }else{\n        $(this).next().slideDown('slow')\n        $(this).children().css(\"color\", \"#ec4c6a\")\n      }\n    })\n  </script>\n  </body>\n</html>\n"
+     
+   } ,
+  
+   {
+     
+   } ,
+  
+   {
+     
+        "title"    : "Search",
+        "category" : "",
+        "tags"     : "",
+        "url"      : "/search/",
+        "date"     : "",
+        "content"  : "<div id=\"results\">\n  <h1><!-- `key` listing for `value` --></h1>\n\n  <ul class=\"results\">\n    <!-- results lists -->\n  </ul>\n</div>\n\n<div id=\"search-container-google\">\n  <script>\n    (function() {\n      var cx = '015731003607597102937:cmvfrjrcoq0';\n      var gcse = document.createElement('script');\n      gcse.type = 'text/javascript';\n      gcse.async = true;\n      gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;\n      var s = document.getElementsByTagName('script')[0];\n      s.parentNode.insertBefore(gcse, s);\n    })();\n  </script>\n  <gcse:search></gcse:search>\n</div>\n\n<!-- Html Elements for Search -->\n<!-- <div id=\"search-container\">\n<input type=\"text\" id=\"search-input\" placeholder=\"검색어를 입력하세요.\">\n<ul id=\"results-container\"></ul>\n</div> -->\n<!-- tag list -->\n<!-- <hr/>\n<div class=\"tags-expo-list\">\n  \n  <a href=\"https://wayhome25.github.io/blog/tags/#python\" class=\"post-tag\">python</a> -->\n\n  <!-- blog/tags/#python -->\n  <!-- \n  <a href=\"https://wayhome25.github.io/blog/tags/#파이썬\" class=\"post-tag\">파이썬</a> -->\n\n  <!-- blog/tags/#python -->\n  <!-- \n</div> -->\n\n\n<!-- Script pointing to jekyll-search.js -->\n<script src=\"/dest/jekyll-search.js\" type=\"text/javascript\"></script>\n\n\n<script type=\"text/javascript\">\n      SimpleJekyllSearch({\n        searchInput: document.getElementById('search-input'),\n        resultsContainer: document.getElementById('results-container'),\n        json: '/search2.json',\n        searchResultTemplate: '<li><a href=\"{url}\" title=\"{desc}\">{title}</a></li>',\n        noResultsText: 'No results found',\n        limit: 10,\n        fuzzy: true,\n        exclude: ['Welcome']\n      })\n</script>\n"
+     
+   } ,
+  
+   {
+     
+   } ,
+  
+   {
+     
+        "title"    : "Tags",
+        "category" : "",
+        "tags"     : "",
+        "url"      : "/blog/tags/",
+        "date"     : "",
+        "content"  : "<div class=\"tags-expo\">\n  <div class=\"tags-expo-list\">\n    {% for tag in site.tags %}\n    <a href=\"#{{ tag[0] | slugify }}\" class=\"post-tag\">{{ tag[0] }}</a>\n    {% endfor %}\n  </div>\n  <hr/>\n  <div class=\"tags-expo-section\">\n    {% for tag in site.tags %}\n    <h2 id=\"{{ tag[0] | slugify }}\">{{ tag[0] }}</h2>\n    <ul class=\"tags-expo-posts\">\n      {% for post in tag[1] %}\n        <a class=\"post-title\" href=\"{{ site.baseurl }}{{ post.url }}\">\n      <li>\n        {{ post.title }}\n      <small class=\"post-date\">{{ post.date | date_to_string }}</small>\n      </li>\n      </a>\n      {% endfor %}\n    </ul>\n    {% endfor %}\n  </div>\n</div>\n"
+     
+   } 
+  
+]

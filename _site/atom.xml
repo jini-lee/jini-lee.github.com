@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>jini-lee 창작과 코딩</title>
+ <link href="http://localhost:4000/atom.xml" rel="self"/>
+ <link href="http://localhost:4000/"/>
+ <updated>2018-06-27T14:43:47+09:00</updated>
+ <id>http://localhost:4000</id>
+ <author>
+   <name>LEE JINHEE</name>
+   <email></email>
+ </author>
+
+ 
+ <entry>
+   <title>테스트 블로그 쓰기</title>
+   <link href="http://localhost:4000/python/2018/06/27/test/"/>
+   <updated>2018-06-27T00:00:00+09:00</updated>
+   <id>http://localhost:4000/python/2018/06/27/test</id>
+   <content type="html">&lt;h1 id=&quot;대제목&quot;&gt;대제목&lt;/h1&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;a href=&quot;jini-lee.github.io&quot;&gt;레퍼런스&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;소제목&quot;&gt;소제목&lt;/h2&gt;
+&lt;p&gt;블로그 쓰기 예제&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;테스트입니다&lt;/li&gt;
+  &lt;li&gt;테스트입니다2&lt;/li&gt;
+  &lt;li&gt;테스트입니다3&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ shell
+$ python manage.py migrate
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;예시&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;kwargs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;test&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;kwargs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'test'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;소제목2&quot;&gt;소제목2&lt;/h2&gt;
+&lt;p&gt;소제목 디스크립션&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;http://127.0.0.1:4000 제킬 띄우기&lt;/li&gt;
+  &lt;li&gt;사이트 확인하기&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ python manage.py migrate
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;테스트 입니다&lt;/li&gt;
+  &lt;li&gt;테스트 입니다2&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;gen&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;yield&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</content>
+ </entry>
+ 
+
+</feed>
