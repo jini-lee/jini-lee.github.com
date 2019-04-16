@@ -167,5 +167,5 @@ python은 first-class object인 언어이다. 이러한 특징으로 closure를 
 함수가 가지는 실제 코어 로직관 별도로 진행되는 역할을 데코레이터를 통해 구현함으로써 코드의 재사용을 줄이는 좋은 기법이다.
 
 
-### reference
+## reference
 [realpython: Primer on Python Decorators](https://realpython.com/primer-on-python-decorators/)
