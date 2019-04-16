@@ -134,7 +134,7 @@ Hi! Cole
 I'm tyler
 ```
 
-##Functools decorator
+## Functools decorator  
 데코레이터를 인터프리터에서 확인해보면 내부함수인 wrapper를 참조하는 것을 확인할 수 있는데, 이는 디버깅시 문제가된다.
 따라서 functools 모듈을 이용해서 실제 데코레이터의 함수 정보를 얻어야한다.
 
