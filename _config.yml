@@ -37,11 +37,9 @@ nav:
   Categories:
     - '/'
     - { python: '/blog/categories/#python' }
-    - { javascript: '/blog/categories/#javascript' }
-    - { swift: '/blog/categories/#swift' }
     - { django: '/blog/categories/#django' }
-    - { postgres: '/blog/categories/#postgres' }
-    - { git: '/blog/categories/#git' }
+    - { deep_learning: '/blog/categories/#deep_learning' }
+    - { algorithms: '/blog/categories/#algorithms' }
     - { side_project: '/blog/categories/#side_project' }
     - { etc: '/blog/categories/#etc' }
     # - { Tags: '/blog/tags/' }
