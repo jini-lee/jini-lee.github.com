@@ -19,7 +19,9 @@ First-Class function의 대표적인 특징이며 이를 통해 데코레이터�
 본격적으로 데코레이터에 들어가기전에 closure의 개념이 들어간 inner function을 살펴보자.
 closure란 First-Class function을 지원하는 언어의 네임 바인딩 기술이다. 함수안에 선언된 내부 함수를 반환하고 이를 함수 외부에서 접근이 가능하게 된다.
 
-```python closure example
+```python 
+# closure example
+
 def parent_func(child):
     print("Parent")
     def first_child():
@@ -48,6 +50,7 @@ def parent_func(child):
 이러한 특징을 이용한 디자인 패턴이 나왔고 데코레이터 또한 구현할 수 있게된다. 
 
 ## Simple decorator 
+
 ```python
 def simple_decorator(func):
     def wrapper():
@@ -79,10 +82,12 @@ Before the function is called.
 Hi!
 After the function is called.
 ```
+
 say_hello 예제는 일급객체의 특징을 이용해 함수의 파라미터로 함수를 던져 함수 반환을 통해 외부(say_hello)에서 내부 함수(wrapper)를 접근하는 것을 구현한 예제이다.  
 say_hi 예제는 데코레이터를 사용했는데 외부 함수(say_hi)위에 데코레이터를 정의하여 구현한 예제이다. simple_decorator(say_hi)
 
 ## Decorating functions with arguments
+
 ```python
 def arg_decorator(func):
     def wrapper(*args, **kwargs):
@@ -94,7 +99,9 @@ def arg_decorator(func):
 def say_hi(name):
     print('hi! {}'.format(name))
 ```
+
 say_hi는 wrapper와 동일하다고 생각해도 무관하다. say_hi에 name값을 주면 wrapper의 파리미터로 전달이 된다. 클로저 특징으로 반환된 wrapper를 say_hi에서 참조하기 때문이다. 
+
 ```python
 >>> say_hi
 <function __main__.wrapper>
@@ -126,6 +133,7 @@ Hi! Cole
 Hi! Cole
 I'm tyler
 ```
+
 ##Functools decorator
 데코레이터를 인터프리터에서 확인해보면 내부함수인 wrapper를 참조하는 것을 확인할 수 있는데, 이는 디버깅시 문제가된다.
 따라서 functools 모듈을 이용해서 실제 데코레이터의 함수 정보를 얻어야한다.
