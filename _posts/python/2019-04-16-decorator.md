@@ -168,4 +168,4 @@ python은 first-class object인 언어이다. 이러한 특징으로 closure를 
 
 
 ### reference
-[realpython](https://realpython.com/primer-on-python-decorators/)
+[realpython: Primer on Python Decorators](https://realpython.com/primer-on-python-decorators/)
