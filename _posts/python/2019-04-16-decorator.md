@@ -134,6 +134,53 @@ Hi! Cole
 I'm tyler
 ```
 
+위 코드를 자세하게 이해하기 위해서 inspect 모듈을 이용해 frame구조를 살펴보자.
+
+```python
+import inspect
+
+frame_return_decorator = None
+frame_wrapper = None
+frame_wrapper = None
+def return_decorator(func):
+    global frame_return_decorator
+    frame_return_decorator = inspect.currentframe()
+    def wrapper(*args, **kwargs):
+        global frame_wrapper
+        frame_wrapper = inspect.currentframe()
+        return func(*args, **kwargs)
+    return wrapper
+    
+@return_decorator
+def say_hi(name):
+    for x in inspect.stack():
+        print(x)
+    global frame_say_hi
+    frame_say_hi = inspect.currentframe()
+    print('Hi! {}'.format(name))
+    return 'I\'m tyler'
+```
+
+```
+>>> say_hi('Cole')
+(<frame object at 0x7f915b174fb0>, '<ipython-input-86-ee5e8e3c7b70>', 17, 'say_hi', [u'    for x in inspect.stack():\n'], 0)
+(<frame object at 0x1022b9608>, '<ipython-input-86-ee5e8e3c7b70>', 12, 'wrapper', [u'        return func(*args, **kwargs)\n'], 0)
+(<frame object at 0x1022b9da8>, '<ipython-input-87-3ebe088a51a6>', 1, '<module>', [u"say_hi('Cole')\n"], 0)
+...
+Hi! Cole
+I'm tyler
+>>> frame_return_decorator.f_back
+<frame at 0x7f915b3756f0>
+>>> frame_wrapper.f_back
+<frame at 0x1022b9da8>
+>>> frame_say_hi.f_back
+<frame at 0x1022b9608>
+```
+
+먼저 stack()함수에 의한 frame의 stack을 살펴보면 return_decorator(wrapper(say_hi))순서의 호출을 확인할 수 있다. say_hi 함수가 stack의 최상위에 있기 때문이다. inspect.currentframe()의 attributes 중 f_back은 caller의 frame을 나타낸다. say_hi의 f_back은 wrapper의 frame과 같은 것을 확인할 수 있다. 즉 say_hi의 반환은 wrapper의 반환이 없다면 값이 최종 프레임에 전달되지 않는다.  
+
+<img src="/public/frame_stack.png"></img>
+
 ## Functools decorator  
 데코레이터를 인터프리터에서 확인해보면 내부함수인 wrapper를 참조하는 것을 확인할 수 있는데, 이는 디버깅시 문제가된다.
 따라서 functools 모듈을 이용해서 실제 데코레이터의 함수 정보를 얻어야한다.
