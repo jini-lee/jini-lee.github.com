@@ -179,7 +179,7 @@ I'm tyler
 
 먼저 stack()함수에 의한 frame의 stack을 살펴보면 return_decorator(wrapper(say_hi))순서의 호출을 확인할 수 있다. say_hi 함수가 stack의 최상위에 있기 때문이다. inspect.currentframe()의 attributes 중 f_back은 caller의 frame을 나타낸다. say_hi의 f_back은 wrapper의 frame과 같은 것을 확인할 수 있다. 즉 say_hi의 반환은 wrapper의 반환이 없다면 값이 최종 프레임에 전달되지 않는다.  
 
-<img src="/public/img/python_img/decorator/frame_stack.png"></img>
+<img src="/public/img/python_img/decorator/frame_stack.png">
 
 ## Functools decorator  
 데코레이터를 인터프리터에서 확인해보면 내부함수인 wrapper를 참조하는 것을 확인할 수 있는데, 이는 디버깅시 문제가된다.
