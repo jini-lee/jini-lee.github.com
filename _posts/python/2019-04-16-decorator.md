@@ -115,7 +115,7 @@ Hi! Cole
 def return_decorator(func):
     def wrapper(*args, **kwargs):
         func(*args, **kwargs)
-        return func(*args, **kwargs) # 내부 함수의 반환값으로 외부 함수의 반환값이 동작 
+        return func(*args, **kwargs) # 내부 함수의 반환으로 외부 함수의 반환값이 동작 
     return wrapper
 
 @return_decorator
