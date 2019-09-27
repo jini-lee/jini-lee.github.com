@@ -6,8 +6,6 @@ tags: [python, 파이썬, iterator, generator, coroutine]
 comments: true
 ---
 
-# Generator
----
 ## iterator와 generator
 `generator`를 이해하기전에 먼저 `iterator`를 간단히 설명하자면 <b>list, set, dictionary, str, bytes, tuple. range</b>와 같은 `iterable`한 타입이나 `collections`을 차례로 꺼낼 수 있는 객체이다. 이들을 loop를 통해 차례로 꺼내고자할 때 메모리에 저장하여 실행하지만 `generator`는 `lazy iterator`로 메모리에 저장하지않고 차례로 꺼내게 된다. 이러한 특징으로 거대한 양의 `iterable`한 객체들을 다룰 때, 무한히 큰 sequence를 다룰 때 사용된다.
 
