@@ -5,7 +5,6 @@ category: python
 tags: [python, 파이썬, decorator, closure]
 comments: true
 ---
-# Decorator
 
 ## Decorator ?
 데코레이터란 특별한 함수나 클래스로 동작한다. 이 기능이 가능한 이유는 파이썬은 First-Class function이기 때문이다. 
