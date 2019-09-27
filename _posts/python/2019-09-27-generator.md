@@ -1,3 +1,11 @@
+---
+layout: post
+title: generator
+category: python
+tags: [python, 파이썬, iterator, generator, coroutine]
+comments: true
+---
+
 # Generator
 ---
 ## iterator와 generator
