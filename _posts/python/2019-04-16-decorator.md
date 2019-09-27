@@ -1,6 +1,6 @@
 ---
 layout: post
-title: decorator 
+title: python decorator 
 category: python
 tags: [python, 파이썬, decorator, closure]
 comments: true
