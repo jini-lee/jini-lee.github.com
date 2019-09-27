@@ -1,10 +1,10 @@
 # Generator
 ---
-### iterator ... generator
+## iterator와 generator
 `generator`를 이해하기전에 먼저 `iterator`를 간단히 설명하자면 <b>list, set, dictionary, str, bytes, tuple. range</b>와 같은 `iterable`한 타입이나 `collections`을 차례로 꺼낼 수 있는 객체이다. 이들을 loop를 통해 차례로 꺼내고자할 때 메모리에 저장하여 실행하지만 `generator`는 `lazy iterator`로 메모리에 저장하지않고 차례로 꺼내게 된다. 이러한 특징으로 거대한 양의 `iterable`한 객체들을 다룰 때, 무한히 큰 sequence를 다룰 때 사용된다.
 
 ---
-### 예제) large files 다룰 때
+## 예제) large files 다룰 때
 ``` python
 csv_list = csv_reader("huge_csv.txt")
 row_content = 0
@@ -46,7 +46,7 @@ def csv_reader(file_name):
 ```
 ---
 
-### 예제) 무한한 시퀀스를 생성할 때 
+## 예제) 무한한 시퀀스를 생성할 때 
 
 ``` python
 def infinite_seq():
@@ -80,7 +80,7 @@ Traceback (most recent call last):
 ```
 ---
 
-### generator의 성능 
+## generator의 성능 
 
 앞서 살펴보았듯 `generator`는 메모리를 최적으로 사용하기에 상당히 좋은 방법이였다. 실제 list와 `generator`의 메모리 사이즈를 `sys.getsizeof()`를 이용하여 살펴보겠다.
 ``` python
@@ -121,7 +121,7 @@ list의 경우 824,464 bytes이고 generator의 경우 120 bytes이다. list가 
 
 ---
 
-### yield
+## yield
 
 `yield`를 가지는 functions은 `generator`이다. `yield`를 통해 callee는 pause되고 caller에게 값을 던져준다. 이는 `StopIteration`을 만날때까지 이어진다. 
 
@@ -155,7 +155,7 @@ list의 경우 824,464 bytes이고 generator의 경우 120 bytes이다. list가 
 
 ---
 
-### send()를 통한 coroutine
+## send()를 통한 coroutine
 
 `generator`는 `yield`를 통해서 값을 caller에게 넘겨주는데 반대로 caller가 값을 넘겨주고 싶을 때 바로 `send()`를 사용한다. 
 
@@ -185,7 +185,7 @@ def score_generator():
 ```
 `send()`함수를 이용해 `yield`를 실행하는 지점에 값을 callee에게 줄 수 있다. 단일방향이 양방향으로 데이터를 주고 받을 수 있게되었다. 이 기법이 바로 `generator`기반의 `coroutine`이며 python3에서는 이를 `native coroutine`으로 발전시키게 되었다.
 
-### throw()와 close()
+## throw()와 close()
 특정한 상황에서 `generator`를 종료(default: StopIteration)하고 싶다면 `throw()`나 `close()`를 사용하면 된다. 간단한 것이니 예제를 바로 살펴보자.
 
 ``` python
@@ -217,7 +217,7 @@ ValueError: Accum_score large then 5
 ```
 ---
 
-### 결론
+## 결론
 * python의 generator functions, generator expressions에 대해서 살펴 봤다. 
 * 해결할 문제에 메모리와 속도 측면에서 getnerator를 고려할 수 있게 되었다. 
 * generator 기반의 coroutine을 살펴보았기 때문에 비동기식 프로그래밍을 이해할 수 있는 준비가 되었다.
