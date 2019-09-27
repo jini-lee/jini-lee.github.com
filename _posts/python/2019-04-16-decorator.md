@@ -13,6 +13,7 @@ comments: true
 - 함수의 파라미터로 전달할 수 있다.
 - 반환 값으로 사용할 수 있다.(closure)
 - 동적으로 프로퍼티 할당이 가능하다.
+---
 
 ## Inner function
 본격적으로 데코레이터에 들어가기전에 closure의 개념을 살펴볼 수 있는 inner function을 살펴보자.
@@ -47,6 +48,7 @@ def parent_func(child):
 
 위 예제를 보면 first 변수에 부모함수에서 반환한 first_child 함수를 참조하고 first를 실행하면 first_child 함수를 실행하게된다.
 이러한 특징을 이용한 디자인 패턴이 나왔고 데코레이터 또한 구현할 수 있게된다. 
+---
 
 ## Simple decorator 
 
@@ -84,6 +86,7 @@ After the function is called.
 
 say_hello 예제는 일급객체의 특징을 이용해 함수의 파라미터로 함수를 던져 함수 반환을 통해 외부(say_hello)에서 내부 함수(wrapper)를 접근하는 것을 구현한 예제이다.  
 say_hi 예제는 데코레이터를 사용했는데 외부 함수(say_hi)위에 데코레이터를 정의하여 구현한 예제이다. 
+---
 
 ## Decorating functions with arguments
 
@@ -108,6 +111,7 @@ say_hi는 wrapper와 동일하다고 생각해도 무관하다. say_hi에 name�
 wrapper: Hi! Cole
 Hi! Cole
 ```
+---
 
 ## Returning values from decorated functions
 ```python
@@ -179,6 +183,7 @@ I'm tyler
 먼저 stack()함수에 의한 frame의 stack을 살펴보면 return_decorator(wrapper(say_hi))순서의 호출을 확인할 수 있다. say_hi 함수가 stack의 최상위에 있기 때문이다. inspect.currentframe()의 attributes 중 f_back은 caller의 frame을 나타낸다. say_hi의 f_back은 wrapper의 frame과 같은 것을 확인할 수 있다. 즉 say_hi의 반환은 wrapper의 반환이 없다면 값이 최종 프레임에 전달되지 않는다.  
 
 <img src="/public/img/python_img/decorator/frame_stack.png">
+---
 
 ## Functools decorator  
 데코레이터를 인터프리터에서 확인해보면 내부함수인 wrapper를 참조하는 것을 확인할 수 있는데, 이는 디버깅시 문제가된다.
@@ -206,10 +211,11 @@ Help on function say_hi in module __main__:
 
 say_hi(*args, **kwargs)
 ```
+---
 
 ## 정리
 python은 First-class function을 지원하는 언어이다. 이러한 특징으로 closure를 이용해 데코레이터를 구현하다.   
-이는 특정 함수의 시작 전, 시작 후에 동작하는 로직을 구현할 때 유용하다. 유효성 검사, 로그 관리, 싱글턴 등 
+이는 특정 함수의 시작 전, 시작 후에 동작하는 로직을 구현할 때 유용하다. 유효성 검사, 로그 관리 등 
 함수가 가지는 실제 코어 로직관 별도로 진행되는 역할을 데코레이터를 통해 구현함으로써 코드의 재사용을 줄이는 좋은 기법이다.
 
 
