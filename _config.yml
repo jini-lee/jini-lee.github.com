@@ -39,8 +39,7 @@ nav:
     - { python: '/blog/categories/#python' }
     - { django: '/blog/categories/#django' }
     - { kubernetes: '/blog/categories/#kubernetes' }
-    - { deep_learning: '/blog/categories/#deep_learning' }
-    - { algorithms: '/blog/categories/#algorithms' }
+    - { deep_learning: '/blog/categories/#machine_learning' }
     - { side_project: '/blog/categories/#side_project' }
     - { etc: '/blog/categories/#etc' }
     # - { Tags: '/blog/tags/' }
