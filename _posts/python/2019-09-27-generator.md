@@ -1,7 +1,7 @@
 ---
 layout: post
 title: python generator
-category: python
+categories: [python]
 tags: [python, 파이썬, iterator, generator, coroutine]
 comments: true
 ---

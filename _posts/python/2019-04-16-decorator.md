@@ -1,7 +1,7 @@
 ---
 layout: post
 title: python decorator 
-category: python
+categories: [python]
 tags: [python, 파이썬, decorator, closure]
 comments: true
 ---
