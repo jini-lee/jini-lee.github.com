@@ -33,16 +33,11 @@ author:
 # Navigation (2nd level links supported)
 nav:
   Home:
-    - '/blog/'
-  Categories:
     - '/'
-    - { python: '/blog/categories/#python' }
-    - { django: '/blog/categories/#django' }
-    - { kubernetes: '/blog/categories/#kubernetes' }
-    - { deep_learning: '/blog/categories/#machine_learning' }
-    - { side_project: '/blog/categories/#side_project' }
-    - { etc: '/blog/categories/#etc' }
-    # - { Tags: '/blog/tags/' }
+  Blog:
+    - '/blog/'
+    - { Categories: '/blog/categories/' }
+    - { Tags: '/blog/tags/' }
   About:
     - '/about/'
   Search:
