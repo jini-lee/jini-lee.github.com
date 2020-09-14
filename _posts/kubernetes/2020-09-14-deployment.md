@@ -45,7 +45,7 @@ Events:
 `kubectl rollout history deployment simpleapp` 명령어를 통해 확인해보면 revision history 확인할 수 있다.  
 업데이트된 버전에 문제가 생겼을 경우 revision 버전을 명시해 롤백을 하거나 이전 버전으로 되돌릴 수 있다. 이 점이 Deployment의 강력한 장점중 하나이다.  
 
-``` Deployment rollback
+```
 $ kubectl rollout undo deployment simpleapp # 이전 버전으로 롤백
 $ kubectl rollout undo deployment simpleapp --to-revision=1 # 특정 버전으로 롤백
 ```
