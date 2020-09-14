@@ -48,3 +48,4 @@ Events:
 ``` Deployment rollback
 $ kubectl rollout undo deployment simpleapp # 이전 버전으로 롤백
 $ kubectl rollout undo deployment simpleapp --to-revision=1 # 특정 버전으로 롤백
+```
