@@ -1,7 +1,7 @@
 # Site Info
 title: jini-lee의 블로그
-tagline: 'jini-lee의 아카이브'
-description: '끄적끄적 타이핑'
+tagline: 'jini-lee의 블로그'
+description: '어떻게 보단 왜'
 baseurl: ""
 url: http://jini-lee.github.io
 
@@ -27,7 +27,6 @@ author:
   description: zaddy.jini
   contact:
     github:    https://github.com/jini-lee
-    facebook:  https://www.facebook.com/jinhee.lee.351
     email:     mailto:zaddy.jini@gmail.com
 
 # Navigation (2nd level links supported)
