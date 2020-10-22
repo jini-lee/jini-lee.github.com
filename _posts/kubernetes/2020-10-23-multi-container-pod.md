@@ -45,7 +45,7 @@ spec:
     command: ["./ipc", "-consumer"]
 ```
 
-### 참고 
+### 덧붙임
 
 - 하나의 Pod속 container들은 어떻게 expose될까? 위에서 말한대로 같은 Pod의 container들은 같은 IP, port space를 가지는데, 각각이 다른 포트를 가짐으로써 expose될 수 있다.
 - 하나의 Pod의 container들이 실행될 때 이들은 병렬적으로 실행된다. 일반적으로 실행 우선순위를 줄 수 없다. 위 linux message 예제의 Pod는 두번째 container가 먼저 실행된다면 메시지가 큐에 없는 상태로 생성되므로 정상 실행이 되지 않을것이다. 이를 회피하기 위해선 [Init Container](https://kubernetes.io/docs/concepts/workloads/pods/init-containers/)를 참고해야 manifest를 작성해야한다.   
