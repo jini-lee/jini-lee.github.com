@@ -1,6 +1,6 @@
 # Site Info
-title: jini-lee의 블로그
-tagline: '사랑, 일, 놀이, 연대'
+title: Tech blog by humanist
+tagline: jini-lee's blog
 description: '어떻게 보단 왜'
 baseurl: ""
 url: http://jini-lee.github.io
@@ -19,7 +19,7 @@ paginate: 5
 paginate_path: '/blog/page:num'
 permalink: pretty
 
-version: 1.0.0
+version: 2.0.0
 
 # About/contact
 author:
