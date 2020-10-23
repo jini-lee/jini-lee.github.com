@@ -14,7 +14,7 @@ Pod는 kubernetes에 의해 배포될 수 있는 가장 작은 유닛이다. 이
 
 Kubernetest는 container를 관리하기위해 restart policy, live probe와 같은 정보를 가지고 있다. 이러한 정보들을 각 container마다 설정하기보다 통합된 entity로 관리한다면 이득을 얻게 될 것이다.
 Pod의 container들은 같은 logical host이다. 같은 network namespace를 사용하고 볼륨을 공유 할 수 있다. 이런 특징을 가진 container들은 효율적인 통신을 할 것이고 상호간의 data locality를 보장한다. 
-그렇다면 Pod와 마찬가지로 하나의 container가 여러 기능을 담으면 될거 같지만 그렇지 않다. 이유는 많은 기능들을 하나의 container에 담는 것은 하나의 container는 하나의 Process를 가지는 전략에 반한다. 이것은 __SOLID__의 __단일책임의 원칙(SRP)__과 결이 비슷하다고 생각한다. 왜냐면 서비스를 뒷받침하는 여러 소프트웨어들의 디펜던시의 결합성을 낮출 수 있고(decoupling), 또한 협업 시 세분화된 container는 재상용성이 좋다.
+그렇다면 Pod와 마찬가지로 하나의 container가 여러 기능을 담으면 될거 같지만 그렇지 않다. 이유는 많은 기능들을 하나의 container에 담는 것은 하나의 container는 하나의 Process를 가지는 전략에 반한다. 이것은 **SOLID**의 **단일책임의 원칙(SRP)**과 결이 비슷하다고 생각한다. 왜냐면 서비스를 뒷받침하는 여러 소프트웨어들의 디펜던시의 결합성을 낮출 수 있고(decoupling), 또한 협업 시 세분화된 container는 재상용성이 좋다.
 물론 하나의 Pod가 여러 container를 가지는 것, 하나의 container는 하나의 프로세스를 가지는 것에도 trade-off는 존재할 것이다. 적어도 이런 특징을 깊이 고민한 후 설계한다면 더 나은 소프트웨어가 만들어지지 않을까.
 
 ### 여러 container를 가지는 Pod의 예
