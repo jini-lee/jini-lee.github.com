@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Docker container logs 
-categories: [docker, container]
-tags: [log, container]
+categories: [docker]
+tags: [log, container, docker]
 comments: true
 ---
 
