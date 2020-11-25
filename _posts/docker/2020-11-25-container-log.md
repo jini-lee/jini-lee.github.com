@@ -15,7 +15,8 @@ comments: true
 
 ### Logging drivers
   Logging driver는 컨테이너들의 log streams를 모으는 역할을 한다. 기본 driver는 json-file이며 syslog, journald(systemd journal용 드라이버), fluentd, logagent 등이 있다. [logging driver는 도커를 실행할 때 daemon.json 파일에 설정할 수 있다.](https://docs.docker.com/config/containers/logging/json-file/)  
-  참고로 fluentd를 로깅 드라이버로 쓰려면 컨테이너와 동일한 host에 fluentd daemon이 있어야한다. daemon.json을 아래와 같이 작성하거나 command로도 로그 스트림은 fluentd로 리디렉션된다. 
+  참고로 fluentd를 로깅 드라이버로 쓰려면 컨테이너와 동일한 host에 fluentd daemon이 있어야한다. daemon.json을 아래와 같이 작성하거나 command로도 로그 스트림은 fluentd로 리디렉션된다.  
+  [fluentd docker logging 레퍼런스](https://docs.fluentd.org/container-deployment/docker-logging-driver)
 
 ```
 # daemon.json
@@ -32,7 +33,6 @@ comments: true
 $ docker run --log-driver=fluentd --log-opt fluentd-address=fluentdhost:24224
 ```
 
-[fluentd docker logging](https://docs.fluentd.org/container-deployment/docker-logging-driver)
 
 
 
