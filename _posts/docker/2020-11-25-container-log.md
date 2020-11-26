@@ -8,9 +8,7 @@ comments: true
 
 
 
-## Docker 
-
-의 로깅 시스템
+## Docker 의 로깅 시스템
   컨테이너 운영환경에서 Application을 운영하다보면 기본적인 로깅 시스템의 이해가 필요하다. 도커는 log stream(도커의 기본 로그는 stderr, stdout만 스트림)을 컨테이너 엔진에 의해 처리하고 로깅 드라이버로 리디렉션 한다. 이 로그들이 어느 위치에 어떠한 형태로 저장되는지 등의 도커 컨테이너의 로깅 시스템에 대한 기본적인 정리를 하고자 한다. 
 
 
@@ -44,6 +42,7 @@ $ docker run --log-driver=fluentd --log-opt fluentd-address=fluentdhost:24224
   JSON log 파일은 linux 환경에서는 /var/lib/docker/containers/ 하위에 존재하고 mac os에서는 ~/Library/Containers/com.docker.docker/Data/ 하위에 존재한다. 이 때 하나 당 하나의 로그 파일을 가지며 컨테이너의 id로 파일을 찾으면 된다. 아래의 명령을 통해 확인할 수 있는 로그가 언급한 location에서 가져오는 것이다.  
 
 ```
+# docker command
 $ docker logs <container_id>
 ```
 
